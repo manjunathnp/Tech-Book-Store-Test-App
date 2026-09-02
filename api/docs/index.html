@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tech Book Store Practice API - Documentation</title>
+<style>
+  /* ---- Swagger UI inspired theme (fully offline, no CDN) ---- */
+  :root {
+    --get: #256aa2;   --get-bg: rgba(37,106,162,.1);
+    --post: #1f7a55;  --post-bg: rgba(31,122,85,.1);
+    --put: #925300;   --put-bg: rgba(146,83,0,.1);
+    --patch: #147465; --patch-bg: rgba(20,116,101,.1);
+    --delete: #c52c2c;--delete-bg: rgba(197,44,44,.1);
+    --ink: #3b4151; --muted: #6b7681; --line: #e8e8e8;
+    --green: #49cc90; --topbar: #1b1b1b;
+    --sidebar: #fafafa; --code: #41444e;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink); background: #fff; font-size: 14px; line-height: 1.5;
+  }
+  code, pre, .mono { font-family: "Source Code Pro", "Liberation Mono", Menlo, Consolas, monospace; }
+  .skip-link { position:fixed; left:12px; top:8px; z-index:1000; transform:translateY(-160%); background:#fff; color:#173f61; padding:9px 13px; border:2px solid var(--get); border-radius:6px; font-weight:700; }
+  .skip-link:focus { transform:none; }
+  :focus-visible { outline:3px solid #174f7b; outline-offset:3px; }
+
+  /* Top bar */
+  .topbar { background: var(--topbar); padding: 10px 20px; display: flex; align-items: center; gap: 14px; position: sticky; top: 0; z-index: 50; }
+  .topbar .logo { color: #fff; font-weight: 700; font-size: 17px; letter-spacing: .2px; display: flex; align-items: center; gap: 9px; }
+  .topbar .logo .mark { width: 26px; height: 26px; border-radius: 6px; background: linear-gradient(135deg,#49cc90,#61affe); display: inline-block; }
+  .topbar .spacer { flex: 1; }
+  .topbar .storefront-link { min-height:44px; display:inline-flex; align-items:center; gap:7px; color:#fff; border:1px solid #4b5563; border-radius:6px; padding:6px 12px; text-decoration:none; font-size:13px; font-weight:700; white-space:nowrap; }
+  .topbar .storefront-link:hover { border-color:var(--get); background:#262d35; }
+  .topbar .storefront-link .site-icon { width:20px; height:20px; border-radius:5px; background:var(--get-bg); color:var(--get); display:grid; place-items:center; font-family:"Source Code Pro", monospace; font-size:10px; }
+  .topbar .urlbox { display: flex; align-items: center; gap: 6px; background: #2a2a2a; border: 1px solid #3a3a3a; border-radius: 6px; padding: 5px 8px; }
+  .topbar .urlbox input { background: #111; color: #cfd4da; border: 1px solid #3a3a3a; border-radius: 4px; padding: 5px 8px; font-size: 12px; width: 240px; font-family: "Source Code Pro", monospace; }
+  .topbar .authorize { min-height:44px; background: transparent; color: #fff; border: 2px solid var(--green); border-radius: 6px; padding: 6px 16px; font-weight: 700; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 7px; }
+  .topbar .authorize.on { background: var(--green); }
+  .topbar .authorize .lock { width: 14px; height: 14px; display: inline-block; }
+
+  .layout { display: flex; align-items: flex-start; }
+
+  /* Sidebar */
+  .sidebar { width: 250px; min-width: 250px; background: var(--sidebar); border-right: 1px solid var(--line); height: calc(100vh - 46px); position: sticky; top: 46px; overflow-y: auto; padding: 16px 0; }
+  .sidebar .filter { padding: 0 16px 12px; }
+  .sidebar .filter input { width: 100%; padding: 8px 10px; border: 1px solid #d5d9dd; border-radius: 6px; font-size: 13px; }
+  .sidebar h4 { margin: 14px 16px 6px; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .sidebar a.navlink { min-height:44px; display: flex; align-items: center; gap: 8px; padding: 6px 16px; color: var(--ink); text-decoration: none; font-size: 13px; }
+  .sidebar a.navlink:hover { background: #eef1f3; }
+  .sidebar a.navlink .count { margin-left: auto; background: #e2e6ea; color: #4b5563; border-radius: 10px; font-size: 11px; padding: 0 7px; }
+
+  /* Main */
+  .main { flex: 1; min-width: 0; padding: 22px 30px 90px; max-width: 1100px; }
+
+  /* Info block */
+  .info h1 { font-size: 30px; margin: 4px 0 6px; color: #3b4151; font-weight: 800; }
+  .info .version { display: inline-block; background: #7d8492; color: #fff; font-size: 12px; border-radius: 50px; padding: 2px 12px; margin-left: 8px; vertical-align: middle; font-weight: 700; }
+  .info .desc { color: #3b4151; margin: 6px 0 4px; max-width: 900px; }
+  .info .base { color: var(--muted); font-size: 13px; }
+  .info .base b { color: var(--ink); }
+
+  /* Start-here beginner panel */
+  .starthere { border: 1px solid #cfe8dd; background: #f2fbf7; border-radius: 10px; padding: 16px 18px; margin: 18px 0 8px; }
+  .starthere h3 { margin: 0 0 8px; color: #2f7d5b; font-size: 15px; }
+  .starthere ol { margin: 0; padding-left: 20px; }
+  .starthere li { margin: 4px 0; }
+  .starthere .pill { display: inline-block; background: #49cc90; color: #fff; border-radius: 4px; font-size: 11px; padding: 1px 6px; font-weight: 700; }
+
+  /* Tag section */
+  .tag-section { margin-top: 26px; scroll-margin-top: 64px; }
+  .tag-head { width:100%; display: flex; align-items: center; gap: 10px; border:0; border-bottom: 1px solid var(--line); padding:0 0 6px; cursor: pointer; background:transparent; color:inherit; text-align:left; font:inherit; }
+  .tag-head .tag-title { font-size: 22px; margin: 0; color: #3b4151; font-weight: 700; }
+  .tag-head .tag-desc { color: var(--muted); font-size: 13px; margin-left: 4px; }
+  .tag-head .chev { margin-left: auto; color: var(--muted); transition: transform .15s; }
+  .tag-section.collapsed .chev { transform: rotate(-90deg); }
+  .tag-section.collapsed .op { display: none; }
+
+  /* Operation row */
+  .op { border: 1px solid; border-radius: 8px; margin: 8px 0; overflow: hidden; }
+  .op.get { border-color: var(--get); background: var(--get-bg); }
+  .op.post { border-color: var(--post); background: var(--post-bg); }
+  .op.put { border-color: var(--put); background: var(--put-bg); }
+  .op.patch { border-color: var(--patch); background: var(--patch-bg); }
+  .op.delete { border-color: var(--delete); background: var(--delete-bg); }
+  .op-head { width:100%; display: flex; align-items: center; gap: 12px; padding: 8px 12px; cursor: pointer; border:0; background:transparent; color:inherit; text-align:left; font:inherit; }
+  .verb { color: #fff; font-weight: 700; font-size: 12px; letter-spacing: .04em; padding: 6px 0; border-radius: 5px; min-width: 74px; text-align: center; text-transform: uppercase; }
+  .op.get .verb { background: var(--get); } .op.post .verb { background: var(--post); }
+  .op.put .verb { background: var(--put); } .op.patch .verb { background: var(--patch); } .op.delete .verb { background: var(--delete); }
+  .op-path { font-family: "Source Code Pro", monospace; font-weight: 700; color: #3b4151; font-size: 14px; }
+  .op-sum { color: #3b4151; opacity: .75; margin-left: auto; text-align: right; font-size: 13px; }
+  .op-lock { width: 15px; height: 15px; opacity: .5; }
+
+  .op-body { display: none; background: #fff; border-top: 1px solid var(--line); padding: 16px; }
+  .op-body.open { display: block; }
+  .op-desc { color: #3b4151; margin-bottom: 12px; }
+  .section-label { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: #3b4151; font-weight: 700; margin: 14px 0 6px; }
+
+  table.tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.tbl th, table.tbl td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.tbl th { color: var(--muted); font-weight: 600; font-size: 12px; }
+  .pname { font-family: "Source Code Pro", monospace; font-weight: 700; }
+  .req { color: var(--delete); font-size: 11px; margin-left: 4px; font-weight: 700; }
+  .ptype { color: var(--muted); font-size: 12px; font-family: "Source Code Pro", monospace; }
+
+  .schema-box { background: #41444e; color: #e6e6e6; border-radius: 6px; padding: 12px; font-family: "Source Code Pro", monospace; font-size: 12.5px; overflow-x: auto; white-space: pre; }
+  .resp-row { display: flex; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .resp-code { font-family: "Source Code Pro", monospace; font-weight: 700; min-width: 44px; }
+  .c2 { color: var(--post); } .c3 { color: var(--put); } .c4 { color: var(--delete); } .c5 { color: var(--delete); }
+
+  /* Try it out */
+  .tryout { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 12px; }
+  .btn { min-height:44px; border: 0; border-radius: 6px; padding: 8px 16px; font-weight: 700; font-size: 13px; cursor: pointer; }
+  .btn-try { background: #fff; color: var(--muted); border: 1px solid #b5bcc4; }
+  .btn-try.active { color: var(--ink); border-color: #7d8492; }
+  .btn-exec { background: var(--get); color: #fff; width: 100%; margin-top: 10px; }
+  .btn-clear { background: #fff; color: var(--muted); border: 1px solid #b5bcc4; margin-left: 8px; }
+  .try-fields { display: none; margin-top: 10px; }
+  .try-fields.open { display: block; }
+  .try-fields label { display: block; font-size: 12px; color: var(--muted); margin: 8px 0 3px; font-weight: 600; }
+  .try-fields input, .try-fields textarea { width: 100%; padding: 8px 10px; border: 1px solid #d5d9dd; border-radius: 6px; font-family: "Source Code Pro", monospace; font-size: 13px; }
+  .try-fields textarea { min-height: 100px; resize: vertical; }
+  .resp-out { margin-top: 12px; display: none; }
+  .resp-out.open { display: block; }
+  .resp-out .status-line { font-weight: 700; margin-bottom: 6px; font-family: "Source Code Pro", monospace; }
+  pre.resp-body { background: #41444e; color: #e6e6e6; border-radius: 6px; padding: 12px; font-family: "Source Code Pro", monospace; font-size: 12.5px; overflow: auto; max-height: 340px; margin: 0; white-space: pre-wrap; }
+
+  /* Authorize modal */
+  .overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.4); z-index: 100; }
+  .overlay.open { display: block; }
+  .modal { background: #fff; max-width: 520px; margin: 8vh auto; border-radius: 10px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,.3); }
+  .modal .m-head { display: flex; align-items: center; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+  .modal .m-head h3 { margin: 0; font-size: 18px; }
+  .modal .m-head .x { margin-left: auto; cursor: pointer; color: var(--muted); font-size: 22px; line-height: 1; border: 0; background: none; }
+  .modal .m-body { padding: 20px; }
+  .modal .m-body p { margin: 0 0 10px; color: #3b4151; font-size: 13px; }
+  .modal label { display: block; font-size: 12px; color: var(--muted); margin: 10px 0 3px; font-weight: 600; }
+  .modal input { width: 100%; padding: 9px 11px; border: 1px solid #d5d9dd; border-radius: 6px; font-size: 13px; }
+  .modal .m-actions { display: flex; gap: 10px; margin-top: 16px; }
+  .modal .m-actions .btn-auth { background: var(--green); color: #fff; flex: 1; }
+  .modal .m-status { font-size: 12px; margin-top: 10px; color: var(--muted); }
+  .modal .divider { border-top: 1px dashed var(--line); margin: 16px 0; }
+
+  .footer-note { color: var(--muted); font-size: 12px; margin-top: 40px; border-top: 1px solid var(--line); padding-top: 20px; }
+  .creator-card { display:grid; grid-template-columns:minmax(180px,.8fr) minmax(0,1.6fr); gap:20px; align-items:start; padding:16px 18px; border:1px solid var(--line); border-radius:10px; background:var(--sidebar); }
+  .creator-card .creator-label { display:block; color:var(--ink); font-weight:700; margin-bottom:4px; }
+  .creator-card .creator-name { color:var(--ink); font-size:14px; font-weight:800; }
+  .creator-links { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+  .creator-link { min-width:0; display:flex; align-items:center; gap:8px; padding:8px 10px; border:1px solid #d9dde2; border-radius:7px; background:#fff; color:var(--ink); text-decoration:none; font-weight:600; }
+  .creator-link:hover { border-color:var(--get); color:#246fa7; }
+  .creator-icon { flex:0 0 auto; min-width:25px; height:25px; padding:0 5px; border-radius:6px; background:#e8f3fd; color:#246fa7; display:grid; place-items:center; font-family:"Source Code Pro", monospace; font-size:10px; font-weight:800; }
+  .creator-link span:last-child { min-width:0; overflow-wrap:anywhere; }
+  a { color: #246fa7; }
+
+  /* Inline validation message for missing required path params */
+  .param-warn { color: var(--delete); font-size: 12px; margin-top: 8px; font-weight: 600; }
+
+  /* Responsive: collapse the sidebar and shrink the top bar on small screens */
+  @media (max-width: 820px) {
+    .topbar { flex-wrap: wrap; gap: 8px; }
+    .topbar .urlbox input { width: 150px; }
+    .layout { flex-direction:column; }
+    .sidebar { display:block; position:static; width:100%; min-width:0; height:auto; padding:12px 14px; border-right:0; border-bottom:1px solid var(--line); }
+    .sidebar .filter { padding:0 0 10px; }
+    .sidebar #nav { display:flex; gap:4px; overflow-x:auto; padding-bottom:3px; }
+    .sidebar #nav h4 { display:none; }
+    .sidebar a.navlink { flex:0 0 auto; border:1px solid var(--line); border-radius:6px; background:#fff; }
+    .main { padding: 16px 14px 80px; }
+    .op-sum { display: none; }
+    .creator-card { grid-template-columns:1fr; }
+    .creator-links { grid-template-columns:1fr; }
+  }
+  @media (max-width: 560px) {
+    .op-head { flex-wrap: wrap; }
+    .topbar .urlbox { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; transition-duration:.01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#mainContent">Skip to API documentation</a>
+
+<div class="topbar">
+  <div class="logo"><span class="mark"></span> Tech Book Store API</div>
+  <div class="spacer"></div>
+  <a class="storefront-link" href="/techbookstore-shop.html" target="_blank" rel="noopener noreferrer" data-testid="open-storefront"><span class="site-icon" aria-hidden="true">TBS</span><span>Open Storefront</span></a>
+  <div class="urlbox">
+    <span style="color:#8a9098;font-size:12px;">Base URL</span>
+    <input id="baseUrl" spellcheck="false" />
+  </div>
+  <button class="authorize" id="authorizeBtn" aria-haspopup="dialog" aria-controls="overlay" aria-expanded="false">
+    <svg class="lock" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1a4 4 0 0 0-4 4v2H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V5a4 4 0 0 0-4-4zm2 6H8V5a2 2 0 1 1 4 0v2z"/></svg>
+    Authorize
+  </button>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="filter"><label for="filterInput" class="mono">Filter endpoints</label><input id="filterInput" type="search" placeholder="Method, path, or description" /></div>
+    <div id="nav"></div>
+  </aside>
+
+  <main class="main" id="mainContent" tabindex="-1">
+    <div class="info">
+      <h1 id="apiTitle">Tech Book Store Practice API <span class="version" id="apiVersion">1.0.0</span></h1>
+      <div class="desc" id="apiDesc">Loading...</div>
+      <div class="base">Base URL: <b id="baseShow">http://127.0.0.1:3000</b> &nbsp;|&nbsp; Spec: <a href="openapi.json" target="_blank">openapi.json</a></div>
+    </div>
+
+    <div class="starthere">
+      <h3>New to API testing? Start here (4 tiny steps)</h3>
+      <ol>
+        <li><b>Make sure the server is running.</b> The Base URL above should answer. If the page loaded, it is running.</li>
+        <li><b>Get a token.</b> Click the green <span class="pill">Authorize</span> button (top right), press "Log in as admin", then "Close". You are now signed in.</li>
+        <li><b>Open an endpoint.</b> Click any row below to expand it and read what it does.</li>
+        <li><b>Try it.</b> Press "Try it out", fill any fields, then "Execute". The real response appears right there.</li>
+      </ol>
+    </div>
+
+    <div id="content"></div>
+
+    <div class="footer-note" data-testid="creator-footer">
+      <div class="creator-card">
+        <div>
+          <span class="creator-label">Designed &amp; Developed by:</span>
+          <span class="creator-name">Manjunath N P</span>
+        </div>
+        <div class="creator-links">
+          <a class="creator-link" href="https://manjunathnp.in" target="_blank" rel="noopener noreferrer"><span class="creator-icon" aria-hidden="true">WWW</span><span>manjunathnp.in</span></a>
+          <a class="creator-link" href="https://linkedin.com/in/manjunathnp" target="_blank" rel="noopener noreferrer"><span class="creator-icon" aria-hidden="true">in</span><span>linkedin.com/in/manjunathnp</span></a>
+          <a class="creator-link" href="https://github.com/manjunathnp" target="_blank" rel="noopener noreferrer"><span class="creator-icon" aria-hidden="true">GH</span><span>github.com/manjunathnp</span></a>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Authorize modal -->
+<div class="overlay" id="overlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="authorizeTitle" tabindex="-1">
+    <div class="m-head">
+      <h3 id="authorizeTitle">Authorize</h3>
+      <button class="x" id="modalClose" aria-label="Close authorization dialog">&times;</button>
+    </div>
+    <div class="m-body">
+      <p>Most write actions need a token. The quickest way is to log in with a seeded account. This fills your token automatically.</p>
+      <label for="loginEmail">Email</label>
+      <input id="loginEmail" type="email" value="admin@bookstore.test" spellcheck="false" />
+      <label for="loginPass">Password</label>
+      <input id="loginPass" type="password" value="admin123" spellcheck="false" />
+      <div class="m-actions">
+        <button class="btn btn-auth" id="doLoginBtn">Log in as admin</button>
+      </div>
+      <div class="m-status" id="loginStatus">Not signed in.</div>
+
+      <div class="divider"></div>
+      <p>Or paste an access token directly:</p>
+      <label for="tokenInput">Bearer token</label>
+      <input id="tokenInput" placeholder="eyJhbGciOi..." spellcheck="false" />
+      <div class="m-status">Tip: press "Reset data" to restore the original 100 books at any time.</div>
+      <div class="m-actions">
+        <button class="btn btn-try" id="resetBtn">Reset data</button>
+        <button class="btn btn-auth" id="closeModalBtn">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var SPEC = null;
+  var baseUrlInput = document.getElementById('baseUrl');
+  var tokenInput = document.getElementById('tokenInput');
+  baseUrlInput.value = location.origin;
+  document.getElementById('baseShow').textContent = location.origin;
+  baseUrlInput.addEventListener('input', function () {
+    document.getElementById('baseShow').textContent = baseUrlInput.value || location.origin;
+  });
+  function safeLocalBase(value) {
+    try {
+      var url = new URL(String(value || '').trim(), location.origin);
+      if (['127.0.0.1', 'localhost', '::1', '[::1]'].indexOf(url.hostname) === -1) return null;
+      if (url.protocol !== 'http:' && url.protocol !== 'https:') return null;
+      if (url.username || url.password) return null;
+      return url.href.replace(/\/$/, '');
+    } catch (e) { return null; }
+  }
+
+  var METHOD_ORDER = ['get', 'post', 'put', 'patch', 'delete', 'head', 'options'];
+
+  function el(tag, attrs, kids) {
+    var e = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) {
+      if (k === 'class') e.className = attrs[k];
+      else if (k === 'html') e.innerHTML = attrs[k];
+      else e.setAttribute(k, attrs[k]);
+    });
+    (kids || []).forEach(function (c) { if (c) e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+    return e;
+  }
+  function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-'); }
+
+  // Build a small example object from a schema (handles $ref).
+  function resolveExample(schema, depth) {
+    depth = depth || 0;
+    if (!schema || depth > 5) return {};
+    if (schema.$ref) return resolveExample(SPEC.components.schemas[schema.$ref.split('/').pop()], depth + 1);
+    if (schema.example !== undefined) return schema.example;
+    if (schema.type === 'object' || schema.properties) {
+      var o = {}, props = schema.properties || {};
+      Object.keys(props).forEach(function (p) { o[p] = resolveExample(props[p], depth + 1); });
+      return o;
+    }
+    if (schema.type === 'array') return [resolveExample(schema.items, depth + 1)];
+    if (schema.type === 'integer' || schema.type === 'number') return 0;
+    if (schema.type === 'boolean') return true;
+    if (schema.enum) return schema.enum[0];
+    return schema.type === 'string' ? 'string' : null;
+  }
+  function schemaText(schema) { try { return JSON.stringify(resolveExample(schema), null, 2); } catch (e) { return ''; } }
+  function reqBodySchema(op) {
+    if (!op.requestBody || !op.requestBody.content) return null;
+    var c = op.requestBody.content['application/json'];
+    return c ? c.schema : null;
+  }
+
+  function buildOp(pathKey, method, op) {
+    var secured = !!op.security;
+    var opId = slug(method + '-' + pathKey);
+    var wrap = el('div', { class: 'op ' + method, id: opId });
+
+    var lock = secured ? el('span', { class: 'op-lock', title: 'Requires a token',
+      html: '<svg viewBox="0 0 20 20" fill="#6b7681"><path d="M10 1a4 4 0 0 0-4 4v2H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1V5a4 4 0 0 0-4-4zm2 6H8V5a2 2 0 1 1 4 0v2z"/></svg>' }) : null;
+
+    var bodyId = opId + '-body';
+    var head = el('button', { class: 'op-head', type: 'button', 'aria-expanded': 'false', 'aria-controls': bodyId }, [
+      el('span', { class: 'verb' }, [method]),
+      el('span', { class: 'op-path' }, [pathKey]),
+      el('span', { class: 'op-sum' }, [op.summary || '']),
+      lock,
+    ]);
+    var body = el('div', { class: 'op-body', id: bodyId });
+
+    if (op.description) body.appendChild(el('div', { class: 'op-desc' }, [op.description]));
+
+    var params = op.parameters || [];
+    if (params.length) {
+      body.appendChild(el('div', { class: 'section-label' }, ['Parameters']));
+      var tbl = el('table', { class: 'tbl' }, [
+        el('tr', {}, [el('th', {}, ['Name']), el('th', {}, ['Located in']), el('th', {}, ['Type']), el('th', {}, ['Description'])]),
+      ]);
+      params.forEach(function (p) {
+        tbl.appendChild(el('tr', {}, [
+          el('td', {}, [el('span', { class: 'pname' }, [p.name]), p.required ? el('span', { class: 'req' }, ['required']) : null]),
+          el('td', {}, [el('span', { class: 'ptype' }, [p.in])]),
+          el('td', {}, [el('span', { class: 'ptype' }, [(p.schema && p.schema.type) || ''])]),
+          el('td', {}, [p.description || '']),
+        ]));
+      });
+      body.appendChild(tbl);
+    }
+
+    var rb = reqBodySchema(op);
+    if (rb) {
+      body.appendChild(el('div', { class: 'section-label' }, ['Request body', ' ', el('span', { class: 'ptype' }, ['application/json'])]));
+      body.appendChild(el('div', { class: 'schema-box' }, [schemaText(rb)]));
+    }
+
+    body.appendChild(el('div', { class: 'section-label' }, ['Responses']));
+    Object.keys(op.responses || {}).forEach(function (code) {
+      body.appendChild(el('div', { class: 'resp-row' }, [
+        el('span', { class: 'resp-code c' + String(code)[0] }, [code]),
+        el('span', {}, [op.responses[code].description || '']),
+      ]));
+    });
+
+    body.appendChild(buildTry(pathKey, method, op, params, rb));
+
+    head.addEventListener('click', function () {
+      var open = body.classList.toggle('open');
+      head.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    wrap.appendChild(head);
+    wrap.appendChild(body);
+    return wrap;
+  }
+
+  function buildTry(pathKey, method, op, params, rb) {
+    var box = el('div', { class: 'tryout' });
+    var toggle = el('button', { class: 'btn btn-try' }, ['Try it out']);
+    var clear = el('button', { class: 'btn btn-clear' }, ['Clear']);
+    var fields = el('div', { class: 'try-fields' });
+    var inputs = {};
+
+    params.forEach(function (p) {
+      fields.appendChild(el('label', {}, [p.name + '  (' + p.in + ')' + (p.required ? '  *' : '')]));
+      var inp = el('input', { value: (p.schema && p.schema.default !== undefined) ? String(p.schema.default) : '', placeholder: p.description || '' });
+      inputs[p.in + ':' + p.name] = inp;
+      fields.appendChild(inp);
+    });
+
+    var bodyArea = null;
+    if (rb) {
+      fields.appendChild(el('label', {}, ['Request body (JSON)']));
+      bodyArea = el('textarea', {}, [schemaText(rb)]);
+      fields.appendChild(bodyArea);
+    }
+
+    var exec = el('button', { class: 'btn btn-exec' }, ['Execute']);
+    var out = el('div', { class: 'resp-out' });
+
+    toggle.addEventListener('click', function () {
+      var on = fields.classList.toggle('open');
+      toggle.classList.toggle('active', on);
+    });
+    clear.addEventListener('click', function () { out.classList.remove('open'); out.innerHTML = ''; });
+    exec.addEventListener('click', function () { sendTry(pathKey, method, params, inputs, bodyArea, out); });
+
+    fields.appendChild(exec);
+    box.appendChild(toggle);
+    box.appendChild(clear);
+    box.appendChild(fields);
+    box.appendChild(out);
+    return box;
+  }
+
+  function sendTry(pathKey, method, params, inputs, bodyArea, out) {
+    var base = safeLocalBase(baseUrlInput.value);
+    if (!base) {
+      out.classList.add('open');
+      out.innerHTML = '';
+      out.appendChild(el('div', { class: 'param-warn' }, ['Use a local API URL such as ' + location.origin + '.']));
+      return;
+    }
+
+    // Guard: every {param} in the path must be filled, or the request would be
+    // sent with a literal "{id}" and confusingly return 404.
+    var missing = [];
+    params.forEach(function (p) {
+      if (p.in === 'path' && inputs['path:' + p.name].value.trim() === '') missing.push(p.name);
+    });
+    if (missing.length) {
+      out.classList.add('open');
+      out.innerHTML = '';
+      out.appendChild(el('div', { class: 'param-warn' }, ['Please fill the required path value(s): ' + missing.join(', ')]));
+      return;
+    }
+
+    var path = pathKey, query = [], headers = {};
+    params.forEach(function (p) {
+      var v = inputs[p.in + ':' + p.name].value;
+      if (v === '') return;
+      if (p.in === 'path') path = path.replace('{' + p.name + '}', encodeURIComponent(v));
+      else if (p.in === 'query') query.push(encodeURIComponent(p.name) + '=' + encodeURIComponent(v));
+      else if (p.in === 'header') headers[p.name] = v;
+    });
+    var url = base + path + (query.length ? '?' + query.join('&') : '');
+    var token = tokenInput.value.trim();
+    if (token) headers['Authorization'] = 'Bearer ' + token;
+
+    var opts = { method: method.toUpperCase(), headers: headers };
+    if (bodyArea && bodyArea.value.trim() && opts.method !== 'GET' && opts.method !== 'HEAD') {
+      headers['Content-Type'] = 'application/json';
+      opts.body = bodyArea.value;
+    }
+
+    out.classList.add('open');
+    out.innerHTML = '';
+    out.appendChild(el('div', { class: 'status-line' }, ['Sending ' + opts.method + ' ' + url + ' ...']));
+
+    var t0 = Date.now();
+    fetch(url, opts).then(function (res) {
+      var ms = Date.now() - t0;
+      var etag = res.headers.get('ETag');
+      return res.text().then(function (text) {
+        var pretty = text;
+        try { pretty = JSON.stringify(JSON.parse(text), null, 2); } catch (e) {}
+        out.innerHTML = '';
+        var cls = 'c' + String(res.status)[0];
+        out.appendChild(el('div', { class: 'status-line ' + cls }, ['HTTP ' + res.status + '   (' + ms + ' ms)' + (etag ? '   ETag: ' + etag : '')]));
+        out.appendChild(el('pre', { class: 'resp-body' }, [pretty || '(empty body)']));
+      });
+    }).catch(function (err) {
+      out.innerHTML = '';
+      out.appendChild(el('pre', { class: 'resp-body' }, ['Request failed: ' + err.message + '\n\nIs the server running at ' + base + ' ?']));
+    });
+  }
+
+  function groupByTag() {
+    var groups = {}, order = (SPEC.tags || []).map(function (t) { return t.name; });
+    Object.keys(SPEC.paths).forEach(function (pathKey) {
+      var methods = SPEC.paths[pathKey];
+      Object.keys(methods).forEach(function (method) {
+        if (METHOD_ORDER.indexOf(method) === -1) return;
+        var op = methods[method];
+        var tag = (op.tags && op.tags[0]) || 'Other';
+        (groups[tag] = groups[tag] || []).push({ pathKey: pathKey, method: method, op: op });
+      });
+    });
+    var names = order.filter(function (t) { return groups[t]; })
+      .concat(Object.keys(groups).filter(function (t) { return order.indexOf(t) === -1; }));
+    return { groups: groups, names: names };
+  }
+
+  function render() {
+    document.getElementById('apiTitle').firstChild.textContent = SPEC.info.title + ' ';
+    document.getElementById('apiVersion').textContent = SPEC.info.version;
+    document.getElementById('apiDesc').textContent = SPEC.info.description || '';
+
+    var g = groupByTag();
+    var content = document.getElementById('content');
+    var nav = document.getElementById('nav');
+    content.innerHTML = '';
+    nav.innerHTML = '';
+    nav.appendChild(el('h4', {}, ['Sections']));
+
+    g.names.forEach(function (tag) {
+      var sectionId = 'tag-' + slug(tag);
+      var tagDef = (SPEC.tags || []).filter(function (t) { return t.name === tag; })[0];
+
+      // Sidebar link (expands the target section so its endpoints are visible)
+      var link = el('a', { class: 'navlink', href: '#' + sectionId }, [
+        tag, el('span', { class: 'count' }, [String(g.groups[tag].length)]),
+      ]);
+      link.addEventListener('click', function () {
+        var target = document.getElementById(sectionId);
+        if (target) {
+          target.classList.remove('collapsed');
+          var targetHead = target.querySelector('.tag-head');
+          if (targetHead) targetHead.setAttribute('aria-expanded', 'true');
+        }
+      });
+      nav.appendChild(link);
+
+      // Section
+      var section = el('div', { class: 'tag-section', id: sectionId });
+      var chev = el('span', { class: 'chev', html: '&#9660;' });
+      var head = el('button', { class: 'tag-head', type: 'button', 'aria-expanded': 'true', 'aria-controls': sectionId + '-operations' }, [
+        el('span', { class: 'tag-title' }, [tag]),
+        tagDef && tagDef.description ? el('span', { class: 'tag-desc' }, [tagDef.description]) : null,
+        chev,
+      ]);
+      var operations = el('div', { id: sectionId + '-operations' });
+      head.addEventListener('click', function () {
+        var collapsed = section.classList.toggle('collapsed');
+        head.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+      });
+      section.appendChild(head);
+      g.groups[tag].forEach(function (item) { operations.appendChild(buildOp(item.pathKey, item.method, item.op)); });
+      section.appendChild(operations);
+      content.appendChild(section);
+    });
+  }
+
+  // Filter: show only matching endpoints. Matching sections are force-expanded
+  // so results are never hidden by a collapsed state. Clearing restores all.
+  document.getElementById('filterInput').addEventListener('input', function (e) {
+    var q = e.target.value.toLowerCase().trim();
+    document.querySelectorAll('.tag-section').forEach(function (sec) {
+      var ops = sec.querySelectorAll('.op');
+      var anyMatch = false;
+      ops.forEach(function (op) {
+        var match = !q || op.textContent.toLowerCase().indexOf(q) !== -1;
+        op.style.display = match ? '' : 'none';
+        if (match) anyMatch = true;
+      });
+      if (q) {
+        sec.classList.toggle('collapsed', false); // reveal matches
+        var sectionHead = sec.querySelector('.tag-head');
+        if (sectionHead) sectionHead.setAttribute('aria-expanded', 'true');
+        sec.style.display = anyMatch ? '' : 'none';
+      } else {
+        sec.style.display = ''; // cleared: show every section again
+      }
+    });
+  });
+
+  // Authorize modal wiring
+  var overlay = document.getElementById('overlay');
+  var modal = overlay.querySelector('.modal');
+  var modalReturnFocus = null;
+  function modalFocusables() {
+    return Array.prototype.slice.call(modal.querySelectorAll('button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), a[href]'));
+  }
+  function openModal() {
+    modalReturnFocus = document.getElementById('authorizeBtn');
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.getElementById('authorizeBtn').setAttribute('aria-expanded', 'true');
+    document.getElementById('loginEmail').focus();
+  }
+  function closeModal() {
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.getElementById('authorizeBtn').setAttribute('aria-expanded', 'false');
+    if (modalReturnFocus && modalReturnFocus.focus) setTimeout(function () { modalReturnFocus.focus(); }, 0);
+  }
+  document.addEventListener('keydown', function (ev) {
+    if (!overlay.classList.contains('open')) return;
+    if (ev.key === 'Escape') { ev.preventDefault(); closeModal(); return; }
+    if (ev.key !== 'Tab') return;
+    var focusable = modalFocusables();
+    if (!focusable.length) { ev.preventDefault(); modal.focus(); return; }
+    var first = focusable[0], last = focusable[focusable.length - 1];
+    if (ev.shiftKey && document.activeElement === first) { ev.preventDefault(); last.focus(); }
+    else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
+  });
+  document.addEventListener('focusin', function (ev) {
+    if (overlay.classList.contains('open') && !modal.contains(ev.target)) {
+      document.getElementById('loginEmail').focus();
+    }
+  });
+  document.getElementById('authorizeBtn').addEventListener('click', openModal);
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.getElementById('closeModalBtn').addEventListener('click', closeModal);
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) closeModal(); });
+
+  function markAuthorized(on, label) {
+    var btn = document.getElementById('authorizeBtn');
+    btn.classList.toggle('on', on);
+    btn.lastChild.textContent = on ? ' Authorized' : ' Authorize';
+    document.getElementById('loginStatus').textContent = label || (on ? 'Signed in.' : 'Not signed in.');
+  }
+
+  document.getElementById('doLoginBtn').addEventListener('click', function () {
+    var base = safeLocalBase(baseUrlInput.value);
+    var email = document.getElementById('loginEmail').value;
+    var pass = document.getElementById('loginPass').value;
+    if (!base) { document.getElementById('loginStatus').textContent = 'Use a local API URL such as ' + location.origin + '.'; return; }
+    document.getElementById('loginStatus').textContent = 'Logging in...';
+    fetch(base + '/api/auth/login', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, password: pass }),
+    }).then(function (r) { return r.json(); }).then(function (data) {
+      if (data && data.tokens && data.tokens.accessToken) {
+        tokenInput.value = data.tokens.accessToken;
+        markAuthorized(true, 'Signed in as ' + data.user.email + ' (' + data.user.role + ').');
+      } else {
+        markAuthorized(false, 'Login failed. Check the email and password.');
+      }
+    }).catch(function (e) { document.getElementById('loginStatus').textContent = 'Login error: ' + e.message; });
+  });
+
+  tokenInput.addEventListener('input', function () {
+    markAuthorized(!!tokenInput.value.trim(), tokenInput.value.trim() ? 'Token set manually.' : 'Not signed in.');
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', function () {
+    var base = safeLocalBase(baseUrlInput.value);
+    if (!base) { document.getElementById('loginStatus').textContent = 'Use a local API URL before resetting data.'; return; }
+    fetch(base + '/api/reset', { method: 'POST' }).then(function (r) { return r.json(); })
+      .then(function () { document.getElementById('loginStatus').textContent = 'Data reset to the original 100 books.'; })
+      .catch(function (e) { document.getElementById('loginStatus').textContent = 'Reset failed: ' + e.message; });
+  });
+
+  // Load spec with XMLHttpRequest so it works in every browser engine.
+  function loadSpec(u, onOk, onFail) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', u, true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState !== 4) return;
+      if (xhr.status >= 200 && xhr.status < 300) {
+        try { onOk(JSON.parse(xhr.responseText)); } catch (e) { onFail(); }
+      } else { onFail(); }
+    };
+    xhr.onerror = onFail;
+    xhr.send();
+  }
+  loadSpec('openapi.json',
+    function (spec) { SPEC = spec; render(); },
+    function () {
+      loadSpec('/openapi.json',
+        function (spec) { SPEC = spec; render(); },
+        function () { document.getElementById('apiDesc').textContent = 'Could not load openapi.json. Open this page through the running server at /docs.'; });
+    });
+})();
+</script>
+</body>
+</html>

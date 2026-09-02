@@ -1,0 +1,12 @@
+{
+  "name": "tech-book-store-test-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Tech Book Store application for end-to-end test automation practice.",
+  "scripts": {
+    "start": "node api/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

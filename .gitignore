@@ -1,0 +1,40 @@
+# Dependencies and caches
+node_modules/
+.npm/
+.cache/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Automation outputs
+playwright-report/
+test-results/
+blob-report/
+allure-results/
+allure-report/
+coverage/
+*.trace.zip
+
+# Generated/runtime output
+dist/
+build/
+out/
+*.log
+*.pid
+*.db
+*.sqlite*
+
+# Local and archived intake material
+*.zip
+source-*/
+
+# OS and editor noise
+.DS_Store
+__MACOSX/
+.idea/
+.vscode/
+*.swp

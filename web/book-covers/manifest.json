@@ -1,0 +1,711 @@
+{
+  "version": 1,
+  "sourceArchive": "TechBookCovers.zip",
+  "sourceFormat": "PNG",
+  "deliveryFormat": "WebP",
+  "width": 880,
+  "height": 1168,
+  "aspectRatio": "55:73",
+  "covers": [
+    {
+      "bookId": 1,
+      "title": "Playwright End to End Testing",
+      "author": "Anita Rao",
+      "file": "001.webp",
+      "sourceFile": "hf_20260830_044133_8a9f295d-aa59-4353-9538-c59108de3efc.png"
+    },
+    {
+      "bookId": 2,
+      "title": "Mastering API Test Automation",
+      "author": "David Chen",
+      "file": "002.webp",
+      "sourceFile": "hf_20260830_044133_b3ad435d-ca73-4ad6-b2da-05b74ba241ca.png"
+    },
+    {
+      "bookId": 3,
+      "title": "The Playwright Handbook",
+      "author": "Priya Nair",
+      "file": "003.webp",
+      "sourceFile": "hf_20260830_044133_0de2a8a5-6881-4c33-90c2-fc68e91e5bf3.png"
+    },
+    {
+      "bookId": 4,
+      "title": "TypeScript for Testers",
+      "author": "Marcus Webb",
+      "file": "004.webp",
+      "sourceFile": "hf_20260830_044133_b9e2c04c-cbeb-47a0-94f7-da5aa035244a.png"
+    },
+    {
+      "bookId": 5,
+      "title": "JavaScript Testing Essentials",
+      "author": "Sofia Alvarez",
+      "file": "005.webp",
+      "sourceFile": "hf_20260830_044133_f477380d-dff8-465a-9568-59881aad5018.png"
+    },
+    {
+      "bookId": 6,
+      "title": "Continuous Testing with CI/CD",
+      "author": "Rahul Menon",
+      "file": "006.webp",
+      "sourceFile": "hf_20260830_044133_ea477dfa-4a21-449c-b2d7-ad87e3408fc3.png"
+    },
+    {
+      "bookId": 7,
+      "title": "REST API Testing in Practice",
+      "author": "Elena Popov",
+      "file": "007.webp",
+      "sourceFile": "hf_20260830_044216_a6cc1fb8-32f1-4e2f-b0b0-c614637aaa17.png"
+    },
+    {
+      "bookId": 8,
+      "title": "Page Object Model Patterns",
+      "author": "James Okoro",
+      "file": "008.webp",
+      "sourceFile": "hf_20260830_044216_6752753e-a414-4c3a-a7e9-9779c075e7fa.png"
+    },
+    {
+      "bookId": 9,
+      "title": "Debugging Flaky Tests",
+      "author": "Mei Lin",
+      "file": "009.webp",
+      "sourceFile": "hf_20260830_044216_5586b806-ae6b-45b0-a00a-8c90aa79f798.png"
+    },
+    {
+      "bookId": 10,
+      "title": "Test Data Management",
+      "author": "Carlos Duarte",
+      "file": "010.webp",
+      "sourceFile": "hf_20260830_044216_7486ee26-dc48-4eab-af6a-d906706515a6.png"
+    },
+    {
+      "bookId": 11,
+      "title": "Contract Testing Fundamentals",
+      "author": "Fatima Hassan",
+      "file": "011.webp",
+      "sourceFile": "hf_20260830_044216_ce15fac3-640c-4e3f-911c-dd562a7416eb.png"
+    },
+    {
+      "bookId": 12,
+      "title": "GraphQL API Testing",
+      "author": "Tomas Novak",
+      "file": "012.webp",
+      "sourceFile": "hf_20260830_044216_fb6c71c9-e3c1-43b9-8519-0873b338c849.png"
+    },
+    {
+      "bookId": 13,
+      "title": "Performance Testing with k6",
+      "author": "Grace Kim",
+      "file": "013.webp",
+      "sourceFile": "hf_20260830_044300_eda17f72-d49e-4e92-b22f-60804066bc20.png"
+    },
+    {
+      "bookId": 14,
+      "title": "Docker for Test Engineers",
+      "author": "Owen Bennett",
+      "file": "014.webp",
+      "sourceFile": "hf_20260830_044300_3f878a80-b027-4bd3-9ae1-f19a9ac314b3.png"
+    },
+    {
+      "bookId": 15,
+      "title": "Kubernetes Testing Strategies",
+      "author": "Lena Fischer",
+      "file": "015.webp",
+      "sourceFile": "hf_20260830_044300_56d7b8af-aae4-4ae9-9762-dec74e5c4a14.png"
+    },
+    {
+      "bookId": 16,
+      "title": "Selenium to Playwright Migration",
+      "author": "Arjun Bhat",
+      "file": "016.webp",
+      "sourceFile": "hf_20260830_044300_62c95fa7-7415-46e2-9a1f-e481a2fab133.png"
+    },
+    {
+      "bookId": 17,
+      "title": "Automating Authentication Flows",
+      "author": "Nadia Petrova",
+      "file": "017.webp",
+      "sourceFile": "hf_20260830_044300_7b5e3612-cc9b-4810-b6b3-c32b6aedf22c.png"
+    },
+    {
+      "bookId": 18,
+      "title": "Web Accessibility Testing",
+      "author": "Samuel Green",
+      "file": "018.webp",
+      "sourceFile": "hf_20260830_044300_0c03b826-aa91-4baf-ad3b-0e699e4fe7d6.png"
+    },
+    {
+      "bookId": 19,
+      "title": "Visual Regression Testing",
+      "author": "Yuki Tanaka",
+      "file": "019.webp",
+      "sourceFile": "hf_20260830_044353_a4782e99-30cf-4e42-b1ef-591cfdcaf42a.png"
+    },
+    {
+      "bookId": 20,
+      "title": "Mocking and Service Virtualization",
+      "author": "Ravi Shankar",
+      "file": "020.webp",
+      "sourceFile": "hf_20260830_044354_1722449a-499c-4dca-810b-5d138c17b4a5.png"
+    },
+    {
+      "bookId": 21,
+      "title": "BDD with Cucumber and Playwright",
+      "author": "Anita Rao",
+      "file": "021.webp",
+      "sourceFile": "hf_20260830_043136_0019f3f9-d2b6-4dfa-a35c-3883f79a3752.png"
+    },
+    {
+      "bookId": 22,
+      "title": "The SDET Career Guide",
+      "author": "David Chen",
+      "file": "022.webp",
+      "sourceFile": "hf_20260830_043136_8097733e-0b74-4f73-8790-ce5903c7480a.png"
+    },
+    {
+      "bookId": 23,
+      "title": "Clean Test Code",
+      "author": "Priya Nair",
+      "file": "023.webp",
+      "sourceFile": "hf_20260830_043136_85a3de0c-f77b-4fc2-850b-1bfa98c49831.png"
+    },
+    {
+      "bookId": 24,
+      "title": "Test Architecture at Scale",
+      "author": "Marcus Webb",
+      "file": "024.webp",
+      "sourceFile": "hf_20260830_043136_022b2004-1a76-4083-ac60-92ab59aed664.png"
+    },
+    {
+      "bookId": 25,
+      "title": "Reporting and Test Analytics",
+      "author": "Sofia Alvarez",
+      "file": "025.webp",
+      "sourceFile": "hf_20260830_043136_a838fee1-543c-4649-833e-4d2ad685bdc2.png"
+    },
+    {
+      "bookId": 26,
+      "title": "Cross Browser Testing Deep Dive",
+      "author": "Rahul Menon",
+      "file": "026.webp",
+      "sourceFile": "hf_20260830_043136_bf7d2395-9c9a-4311-bcc0-e45139b582a5.png"
+    },
+    {
+      "bookId": 27,
+      "title": "Mobile Web Automation",
+      "author": "Elena Popov",
+      "file": "027.webp",
+      "sourceFile": "hf_20260830_043153_f799f53f-dbaa-4553-a6f0-36c27e530728.png"
+    },
+    {
+      "bookId": 28,
+      "title": "Network Interception Techniques",
+      "author": "James Okoro",
+      "file": "028.webp",
+      "sourceFile": "hf_20260830_043153_c1dd1d1a-bd15-4272-814f-2cbe0015a9b7.png"
+    },
+    {
+      "bookId": 29,
+      "title": "Fixtures and Test Isolation",
+      "author": "Mei Lin",
+      "file": "029.webp",
+      "sourceFile": "hf_20260830_043153_14cd69f0-43d7-49f0-9a74-859460946950.png"
+    },
+    {
+      "bookId": 30,
+      "title": "Parallel Test Execution",
+      "author": "Carlos Duarte",
+      "file": "030.webp",
+      "sourceFile": "hf_20260830_043153_7ff12ad5-84dc-4a89-80b5-180e436c8303.png"
+    },
+    {
+      "bookId": 31,
+      "title": "Shift Left Testing",
+      "author": "Fatima Hassan",
+      "file": "031.webp",
+      "sourceFile": "hf_20260830_044354_6193c749-eb4f-4fe0-b0ff-e513101f9ebe.png"
+    },
+    {
+      "bookId": 32,
+      "title": "Exploratory Testing Reimagined",
+      "author": "Tomas Novak",
+      "file": "032.webp",
+      "sourceFile": "hf_20260830_044353_9a1a38f3-3ae6-48ea-944d-93feaaf0e143.png"
+    },
+    {
+      "bookId": 33,
+      "title": "API Security Testing",
+      "author": "Grace Kim",
+      "file": "033.webp",
+      "sourceFile": "hf_20260830_044353_29032846-ab96-4255-bd7f-332ed1b90b13.png"
+    },
+    {
+      "bookId": 34,
+      "title": "Load Testing Foundations",
+      "author": "Owen Bennett",
+      "file": "034.webp",
+      "sourceFile": "hf_20260830_044353_360c5b72-73f8-4769-9075-a6917f7d771a.png"
+    },
+    {
+      "bookId": 35,
+      "title": "Observability for Test Engineers",
+      "author": "Lena Fischer",
+      "file": "035.webp",
+      "sourceFile": "hf_20260830_044439_35e50b4c-734f-4859-839a-60dd1a63c59b.png"
+    },
+    {
+      "bookId": 36,
+      "title": "Git for Test Automation",
+      "author": "Arjun Bhat",
+      "file": "036.webp",
+      "sourceFile": "hf_20260830_044439_148a69f9-bb9b-4add-9a28-aa2a065590d0.png"
+    },
+    {
+      "bookId": 37,
+      "title": "Writing Maintainable Assertions",
+      "author": "Nadia Petrova",
+      "file": "037.webp",
+      "sourceFile": "hf_20260830_044439_2ff5219e-c8fb-4845-9e08-8339e779fd84.png"
+    },
+    {
+      "bookId": 38,
+      "title": "The Art of Test Reviews",
+      "author": "Samuel Green",
+      "file": "038.webp",
+      "sourceFile": "hf_20260830_044439_76b85a58-42fd-4d86-9bb2-9f7159ba4fe0.png"
+    },
+    {
+      "bookId": 39,
+      "title": "Test Environments and Config",
+      "author": "Yuki Tanaka",
+      "file": "039.webp",
+      "sourceFile": "hf_20260830_044439_3ed04537-124d-46b3-bed1-802477626a84.png"
+    },
+    {
+      "bookId": 40,
+      "title": "From Manual to Automation",
+      "author": "Ravi Shankar",
+      "file": "040.webp",
+      "sourceFile": "hf_20260830_044439_de74e27b-4a01-465c-8412-f804235225e2.png"
+    },
+    {
+      "bookId": 41,
+      "title": "Playwright Component Testing",
+      "author": "Anita Rao",
+      "file": "041.webp",
+      "sourceFile": "hf_20260830_044522_ac57bd58-5ab4-4b57-8d43-872bc1247733.png"
+    },
+    {
+      "bookId": 42,
+      "title": "End to End Test Design",
+      "author": "David Chen",
+      "file": "042.webp",
+      "sourceFile": "hf_20260830_044522_46b489b0-f4c4-4f75-97b1-5bec357fa27f.png"
+    },
+    {
+      "bookId": 43,
+      "title": "Data Driven Testing Patterns",
+      "author": "Priya Nair",
+      "file": "043.webp",
+      "sourceFile": "hf_20260830_044522_f2eae33b-2c31-4c61-83eb-a975ed29c7ec.png"
+    },
+    {
+      "bookId": 44,
+      "title": "HTTP and the Web for Testers",
+      "author": "Marcus Webb",
+      "file": "044.webp",
+      "sourceFile": "hf_20260830_044522_773940b7-be8c-4f4c-898a-af9b2f821320.png"
+    },
+    {
+      "bookId": 45,
+      "title": "JSON Schema Validation",
+      "author": "Sofia Alvarez",
+      "file": "045.webp",
+      "sourceFile": "hf_20260830_044522_9a7555a2-3a22-4fde-b4cf-4cc051b9f408.png"
+    },
+    {
+      "bookId": 46,
+      "title": "Async Testing in JavaScript",
+      "author": "Rahul Menon",
+      "file": "046.webp",
+      "sourceFile": "hf_20260830_044522_84dd6463-7dd3-4c43-ab74-d647d2ee6cbb.png"
+    },
+    {
+      "bookId": 47,
+      "title": "Retry and Resilience Patterns",
+      "author": "Elena Popov",
+      "file": "047.webp",
+      "sourceFile": "hf_20260830_044603_ec280f8a-84b9-4068-bad8-46d733016ec6.png"
+    },
+    {
+      "bookId": 48,
+      "title": "Testing Microservices",
+      "author": "James Okoro",
+      "file": "048.webp",
+      "sourceFile": "hf_20260830_044603_f63a800f-f3da-41f3-98ad-0eeed25e4751.png"
+    },
+    {
+      "bookId": 49,
+      "title": "API Documentation for Testers",
+      "author": "Mei Lin",
+      "file": "049.webp",
+      "sourceFile": "hf_20260830_044603_35116c70-9ce4-4fd1-b749-260d1ec0e644.png"
+    },
+    {
+      "bookId": 50,
+      "title": "The Quality Engineering Mindset",
+      "author": "Carlos Duarte",
+      "file": "050.webp",
+      "sourceFile": "hf_20260830_044603_eb6794e6-3f72-4b51-8ab3-e7ab7036992a.png"
+    },
+    {
+      "bookId": 51,
+      "title": "Selenium Grid in Depth",
+      "author": "Fatima Hassan",
+      "file": "051.webp",
+      "sourceFile": "hf_20260830_044603_82dcedfb-b3f8-4da2-829a-7ea377d2dc91.png"
+    },
+    {
+      "bookId": 52,
+      "title": "Cypress vs Playwright",
+      "author": "Tomas Novak",
+      "file": "052.webp",
+      "sourceFile": "hf_20260830_044603_c29f1ac9-155e-4dc1-b5d2-82554d864aed.png"
+    },
+    {
+      "bookId": 53,
+      "title": "Automated Smoke and Regression",
+      "author": "Grace Kim",
+      "file": "053.webp",
+      "sourceFile": "hf_20260830_044647_4d048777-080d-4e55-9a7d-64511a08ee84.png"
+    },
+    {
+      "bookId": 54,
+      "title": "Test Pyramid in Practice",
+      "author": "Owen Bennett",
+      "file": "054.webp",
+      "sourceFile": "hf_20260830_044647_929410d7-2f73-4d06-992d-1261e40efedc.png"
+    },
+    {
+      "bookId": 55,
+      "title": "Flaky Test Forensics",
+      "author": "Lena Fischer",
+      "file": "055.webp",
+      "sourceFile": "hf_20260830_044647_ddb3753a-5d14-4313-a62e-a22bb56e8383.png"
+    },
+    {
+      "bookId": 56,
+      "title": "Advanced Locators and Selectors",
+      "author": "Arjun Bhat",
+      "file": "056.webp",
+      "sourceFile": "hf_20260830_044647_2a38043c-59f2-405d-a743-f496882d84a6.png"
+    },
+    {
+      "bookId": 57,
+      "title": "Session and Cookie Testing",
+      "author": "Nadia Petrova",
+      "file": "057.webp",
+      "sourceFile": "hf_20260830_044647_0d4d964c-8b0a-4f61-93a3-6ea788eaee7e.png"
+    },
+    {
+      "bookId": 58,
+      "title": "Rate Limiting and Throttling",
+      "author": "Samuel Green",
+      "file": "058.webp",
+      "sourceFile": "hf_20260830_044647_c50a3eeb-b041-4b74-b3ea-1b9665016ceb.png"
+    },
+    {
+      "bookId": 59,
+      "title": "Idempotency in APIs",
+      "author": "Yuki Tanaka",
+      "file": "059.webp",
+      "sourceFile": "hf_20260830_044729_6a7a7dac-0416-46e2-8fe9-6162bf505ae2.png"
+    },
+    {
+      "bookId": 60,
+      "title": "Pagination and Filtering Patterns",
+      "author": "Ravi Shankar",
+      "file": "060.webp",
+      "sourceFile": "hf_20260830_044729_bba80ae5-6e40-4314-94f4-eeafab6c3fd1.png"
+    },
+    {
+      "bookId": 61,
+      "title": "Playwright Fixtures in Depth",
+      "author": "Anita Rao",
+      "file": "061.webp",
+      "sourceFile": "hf_20260830_044729_b070792e-cfe4-42bd-85d8-3b018393d4ac.png"
+    },
+    {
+      "bookId": 62,
+      "title": "Test Reporting with Allure",
+      "author": "David Chen",
+      "file": "062.webp",
+      "sourceFile": "hf_20260830_044729_0a15e436-97dd-4cb1-8c01-27856b91a46d.png"
+    },
+    {
+      "bookId": 63,
+      "title": "API Mocking with Playwright",
+      "author": "Priya Nair",
+      "file": "063.webp",
+      "sourceFile": "hf_20260830_044729_fce489e6-180c-429e-bd7c-bb2e9a91bfe1.png"
+    },
+    {
+      "bookId": 64,
+      "title": "Continuous Integration Cookbook",
+      "author": "Marcus Webb",
+      "file": "064.webp",
+      "sourceFile": "hf_20260830_044729_074ce112-936c-496a-b1f8-c1baf00b3bbf.png"
+    },
+    {
+      "bookId": 65,
+      "title": "The Test Automation Pyramid",
+      "author": "Sofia Alvarez",
+      "file": "065.webp",
+      "sourceFile": "hf_20260830_044814_dd4ca6a8-05b9-43a1-8a8e-3d3465e235ed.png"
+    },
+    {
+      "bookId": 66,
+      "title": "Selectors and Auto Waiting",
+      "author": "Rahul Menon",
+      "file": "066.webp",
+      "sourceFile": "hf_20260830_044814_1e6bb64f-af12-4bae-aed6-f4b3298c691c.png"
+    },
+    {
+      "bookId": 67,
+      "title": "Handling Iframes and Popups",
+      "author": "Elena Popov",
+      "file": "067.webp",
+      "sourceFile": "hf_20260830_044814_326e3ff0-9ad8-4d11-82ee-c8d2768c682f.png"
+    },
+    {
+      "bookId": 68,
+      "title": "File Upload and Download Testing",
+      "author": "James Okoro",
+      "file": "068.webp",
+      "sourceFile": "hf_20260830_044814_072191a3-31c1-4566-902c-f499cee11dd5.png"
+    },
+    {
+      "bookId": 69,
+      "title": "Web Sockets Testing Basics",
+      "author": "Mei Lin",
+      "file": "069.webp",
+      "sourceFile": "hf_20260830_044814_d94528d3-4c83-44aa-96ea-749803050190.png"
+    },
+    {
+      "bookId": 70,
+      "title": "Authentication State Reuse",
+      "author": "Carlos Duarte",
+      "file": "070.webp",
+      "sourceFile": "hf_20260830_044815_6857a023-f094-4844-8b4a-9793b9fbad19.png"
+    },
+    {
+      "bookId": 71,
+      "title": "Screenshot and Video Capture",
+      "author": "Fatima Hassan",
+      "file": "071.webp",
+      "sourceFile": "hf_20260830_044859_c1b9aa76-6db1-40a3-8b47-7a4df4b0d062.png"
+    },
+    {
+      "bookId": 72,
+      "title": "Trace Viewer Mastery",
+      "author": "Tomas Novak",
+      "file": "072.webp",
+      "sourceFile": "hf_20260830_044859_de8166cb-c006-4e8d-8d13-64e26d0f71c5.png"
+    },
+    {
+      "bookId": 73,
+      "title": "Sharding Tests Across Machines",
+      "author": "Grace Kim",
+      "file": "073.webp",
+      "sourceFile": "hf_20260830_044859_b3f2f2e3-0f4c-43ab-bbea-408b0156008f.png"
+    },
+    {
+      "bookId": 74,
+      "title": "Environment Variables for Tests",
+      "author": "Owen Bennett",
+      "file": "074.webp",
+      "sourceFile": "hf_20260830_044859_ea8478d1-d7c1-4609-b3ed-836ad0d550b3.png"
+    },
+    {
+      "bookId": 75,
+      "title": "Secrets Management in CI",
+      "author": "Lena Fischer",
+      "file": "075.webp",
+      "sourceFile": "hf_20260830_044859_c3dfe6d0-fb56-4f8b-9f48-4cc11cadebfb.png"
+    },
+    {
+      "bookId": 76,
+      "title": "Testing Single Page Applications",
+      "author": "Arjun Bhat",
+      "file": "076.webp",
+      "sourceFile": "hf_20260830_044859_a8c81097-26c5-441d-b459-922b000ef772.png"
+    },
+    {
+      "bookId": 77,
+      "title": "Handling Dynamic Content",
+      "author": "Nadia Petrova",
+      "file": "077.webp",
+      "sourceFile": "hf_20260830_044947_74c0a7cf-c68f-4a42-a640-154037ff0510.png"
+    },
+    {
+      "bookId": 78,
+      "title": "Keyboard and Mouse Simulation",
+      "author": "Samuel Green",
+      "file": "078.webp",
+      "sourceFile": "hf_20260830_044947_6f53c851-6320-4f8e-8de5-882997051dff.png"
+    },
+    {
+      "bookId": 79,
+      "title": "Drag and Drop Automation",
+      "author": "Yuki Tanaka",
+      "file": "079.webp",
+      "sourceFile": "hf_20260830_044947_f56bae12-2c6c-4e94-9b7c-b8f22a256297.png"
+    },
+    {
+      "bookId": 80,
+      "title": "Testing Forms and Validation",
+      "author": "Ravi Shankar",
+      "file": "080.webp",
+      "sourceFile": "hf_20260830_044947_88ac02cd-3d97-4d2a-af64-9303e79fd17a.png"
+    },
+    {
+      "bookId": 81,
+      "title": "Cookies and Local Storage",
+      "author": "Anita Rao",
+      "file": "081.webp",
+      "sourceFile": "hf_20260830_044947_6473ffa0-93d0-4f50-a76f-c56dc9efd8db.png"
+    },
+    {
+      "bookId": 82,
+      "title": "Geolocation and Permissions",
+      "author": "David Chen",
+      "file": "082.webp",
+      "sourceFile": "hf_20260830_044947_2b5ffa8d-ba43-4dc5-9a99-ecff95242412.png"
+    },
+    {
+      "bookId": 83,
+      "title": "Emulating Mobile Devices",
+      "author": "Priya Nair",
+      "file": "083.webp",
+      "sourceFile": "hf_20260830_045038_a790c31e-2785-4ae3-84d0-fe7da23599ac.png"
+    },
+    {
+      "bookId": 84,
+      "title": "Dark Mode and Theming Tests",
+      "author": "Marcus Webb",
+      "file": "084.webp",
+      "sourceFile": "hf_20260830_045038_2f28039f-904e-4ec3-85e2-aafd6dfbaf9e.png"
+    },
+    {
+      "bookId": 85,
+      "title": "Accessibility Tree Snapshots",
+      "author": "Sofia Alvarez",
+      "file": "085.webp",
+      "sourceFile": "hf_20260830_045038_94fc94a3-ae23-45e5-95b7-9fbd31b794d2.png"
+    },
+    {
+      "bookId": 86,
+      "title": "Component Testing with React",
+      "author": "Rahul Menon",
+      "file": "086.webp",
+      "sourceFile": "hf_20260830_045038_10ff53b3-7c09-4be4-bdaa-f078db9fd6d4.png"
+    },
+    {
+      "bookId": 87,
+      "title": "Testing Vue Applications",
+      "author": "Elena Popov",
+      "file": "087.webp",
+      "sourceFile": "hf_20260830_045038_e961e374-d06b-404e-8252-d33498e17eca.png"
+    },
+    {
+      "bookId": 88,
+      "title": "API First Development",
+      "author": "James Okoro",
+      "file": "088.webp",
+      "sourceFile": "hf_20260830_045038_30c32dbd-799e-4b8e-8cd4-f0de807feb11.png"
+    },
+    {
+      "bookId": 89,
+      "title": "OpenAPI and Schema Testing",
+      "author": "Mei Lin",
+      "file": "089.webp",
+      "sourceFile": "hf_20260830_045120_3ee9ca5d-3a73-411f-87b6-74aaed414af5.png"
+    },
+    {
+      "bookId": 90,
+      "title": "Postman to Playwright",
+      "author": "Carlos Duarte",
+      "file": "090.webp",
+      "sourceFile": "hf_20260830_045120_ef341559-d000-4e12-bd82-d8d75131a789.png"
+    },
+    {
+      "bookId": 91,
+      "title": "Test Case Design Techniques",
+      "author": "Fatima Hassan",
+      "file": "091.webp",
+      "sourceFile": "hf_20260830_045120_a2ab2144-917c-4b63-b303-37fef6ef74e1.png"
+    },
+    {
+      "bookId": 92,
+      "title": "Risk Based Testing",
+      "author": "Tomas Novak",
+      "file": "092.webp",
+      "sourceFile": "hf_20260830_045120_1902aa52-4973-4cb5-8c3d-fae186f457e8.png"
+    },
+    {
+      "bookId": 93,
+      "title": "Boundary Value Analysis",
+      "author": "Grace Kim",
+      "file": "093.webp",
+      "sourceFile": "hf_20260830_045120_6b8705ab-88c4-40ae-ae58-a5a954790415.png"
+    },
+    {
+      "bookId": 94,
+      "title": "Equivalence Partitioning Guide",
+      "author": "Owen Bennett",
+      "file": "094.webp",
+      "sourceFile": "hf_20260830_045120_9f84ea9f-3050-4d4a-8bf0-8d338bab72db.png"
+    },
+    {
+      "bookId": 95,
+      "title": "State Transition Testing",
+      "author": "Lena Fischer",
+      "file": "095.webp",
+      "sourceFile": "hf_20260830_045209_9a1ac8e3-4c3c-4e5f-af10-3dffdb280ed9.png"
+    },
+    {
+      "bookId": 96,
+      "title": "Decision Table Testing",
+      "author": "Arjun Bhat",
+      "file": "096.webp",
+      "sourceFile": "hf_20260830_045209_91219f26-2796-4e01-af92-2c74d9e9ea31.png"
+    },
+    {
+      "bookId": 97,
+      "title": "The Automation ROI Playbook",
+      "author": "Nadia Petrova",
+      "file": "097.webp",
+      "sourceFile": "hf_20260830_045209_2d40cf0f-efd0-41f9-9f83-735dcabeaeaf.png"
+    },
+    {
+      "bookId": 98,
+      "title": "Building a Test Strategy",
+      "author": "Samuel Green",
+      "file": "098.webp",
+      "sourceFile": "hf_20260830_045209_dc29c2df-5117-4d05-acf0-4748292ad838.png"
+    },
+    {
+      "bookId": 99,
+      "title": "Quality Gates in Pipelines",
+      "author": "Yuki Tanaka",
+      "file": "099.webp",
+      "sourceFile": "hf_20260830_045209_7eb2f614-0490-4948-a38e-9331e020954d.png"
+    },
+    {
+      "bookId": 100,
+      "title": "From SDET to Test Lead",
+      "author": "Ravi Shankar",
+      "file": "100.webp",
+      "sourceFile": "hf_20260830_045209_80a327e5-fd4e-4532-8a06-97b678bb07ae.png"
+    }
+  ]
+}

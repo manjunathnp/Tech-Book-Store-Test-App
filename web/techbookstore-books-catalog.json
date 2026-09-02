@@ -1,0 +1,702 @@
+[
+  {
+    "bookName": "Playwright End to End Testing",
+    "author": "Anita Rao",
+    "whatThisBookIsAbout": "Playwright End to End Testing is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Mastering API Test Automation",
+    "author": "David Chen",
+    "whatThisBookIsAbout": "Mastering API Test Automation is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "The Playwright Handbook",
+    "author": "Priya Nair",
+    "whatThisBookIsAbout": "The Playwright Handbook is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "TypeScript for Testers",
+    "author": "Marcus Webb",
+    "whatThisBookIsAbout": "TypeScript for Testers is about applying TypeScript types, tooling, and reusable abstractions to safer test automation code. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "TypeScript",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "JavaScript Testing Essentials",
+    "author": "Sofia Alvarez",
+    "whatThisBookIsAbout": "JavaScript Testing Essentials is about using modern JavaScript patterns to write clear asynchronous tests and diagnose application behavior. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "JavaScript",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Continuous Testing with CI/CD",
+    "author": "Rahul Menon",
+    "whatThisBookIsAbout": "Continuous Testing with CI/CD is about running automated quality gates in continuous integration pipelines with repeatable reporting and secure configuration. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "CI/CD",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "REST API Testing in Practice",
+    "author": "Elena Popov",
+    "whatThisBookIsAbout": "REST API Testing in Practice is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Page Object Model Patterns",
+    "author": "James Okoro",
+    "whatThisBookIsAbout": "Page Object Model Patterns is about applying programming fundamentals such as reusable abstractions, modular design, maintainable code, assertions, data-driven patterns, and resilient error handling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Programming Fundamentals",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Debugging Flaky Tests",
+    "author": "Mei Lin",
+    "whatThisBookIsAbout": "Debugging Flaky Tests is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Test Data Management",
+    "author": "Carlos Duarte",
+    "whatThisBookIsAbout": "Test Data Management is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Contract Testing Fundamentals",
+    "author": "Fatima Hassan",
+    "whatThisBookIsAbout": "Contract Testing Fundamentals is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "GraphQL API Testing",
+    "author": "Tomas Novak",
+    "whatThisBookIsAbout": "GraphQL API Testing is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Performance Testing with k6",
+    "author": "Grace Kim",
+    "whatThisBookIsAbout": "Performance Testing with k6 is about measuring load, latency, throughput, and system behavior under realistic performance conditions. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Performance Testing",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Docker for Test Engineers",
+    "author": "Owen Bennett",
+    "whatThisBookIsAbout": "Docker for Test Engineers is about creating reproducible test environments with source control, containers, orchestration, and operational tooling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "DevOps",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Kubernetes Testing Strategies",
+    "author": "Lena Fischer",
+    "whatThisBookIsAbout": "Kubernetes Testing Strategies is about creating reproducible test environments with source control, containers, orchestration, and operational tooling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "DevOps",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Selenium to Playwright Migration",
+    "author": "Arjun Bhat",
+    "whatThisBookIsAbout": "Selenium to Playwright Migration is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Automating Authentication Flows",
+    "author": "Nadia Petrova",
+    "whatThisBookIsAbout": "Automating Authentication Flows is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Web Accessibility Testing",
+    "author": "Samuel Green",
+    "whatThisBookIsAbout": "Web Accessibility Testing is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Visual Regression Testing",
+    "author": "Yuki Tanaka",
+    "whatThisBookIsAbout": "Visual Regression Testing is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Mocking and Service Virtualization",
+    "author": "Ravi Shankar",
+    "whatThisBookIsAbout": "Mocking and Service Virtualization is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "BDD with Cucumber and Playwright",
+    "author": "Anita Rao",
+    "whatThisBookIsAbout": "BDD with Cucumber and Playwright is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "The SDET Career Guide",
+    "author": "David Chen",
+    "whatThisBookIsAbout": "The SDET Career Guide is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Clean Test Code",
+    "author": "Priya Nair",
+    "whatThisBookIsAbout": "Clean Test Code is about applying programming fundamentals such as reusable abstractions, modular design, maintainable code, assertions, data-driven patterns, and resilient error handling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Programming Fundamentals",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Test Architecture at Scale",
+    "author": "Marcus Webb",
+    "whatThisBookIsAbout": "Test Architecture at Scale is about applying programming fundamentals such as reusable abstractions, modular design, maintainable code, assertions, data-driven patterns, and resilient error handling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Programming Fundamentals",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Reporting and Test Analytics",
+    "author": "Sofia Alvarez",
+    "whatThisBookIsAbout": "Reporting and Test Analytics is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Cross Browser Testing Deep Dive",
+    "author": "Rahul Menon",
+    "whatThisBookIsAbout": "Cross Browser Testing Deep Dive is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Mobile Web Automation",
+    "author": "Elena Popov",
+    "whatThisBookIsAbout": "Mobile Web Automation is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Network Interception Techniques",
+    "author": "James Okoro",
+    "whatThisBookIsAbout": "Network Interception Techniques is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Fixtures and Test Isolation",
+    "author": "Mei Lin",
+    "whatThisBookIsAbout": "Fixtures and Test Isolation is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Parallel Test Execution",
+    "author": "Carlos Duarte",
+    "whatThisBookIsAbout": "Parallel Test Execution is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Shift Left Testing",
+    "author": "Fatima Hassan",
+    "whatThisBookIsAbout": "Shift Left Testing is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Exploratory Testing Reimagined",
+    "author": "Tomas Novak",
+    "whatThisBookIsAbout": "Exploratory Testing Reimagined is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "API Security Testing",
+    "author": "Grace Kim",
+    "whatThisBookIsAbout": "API Security Testing is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Load Testing Foundations",
+    "author": "Owen Bennett",
+    "whatThisBookIsAbout": "Load Testing Foundations is about measuring load, latency, throughput, and system behavior under realistic performance conditions. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Performance Testing",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Observability for Test Engineers",
+    "author": "Lena Fischer",
+    "whatThisBookIsAbout": "Observability for Test Engineers is about measuring load, latency, throughput, and system behavior under realistic performance conditions. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Performance Testing",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Git for Test Automation",
+    "author": "Arjun Bhat",
+    "whatThisBookIsAbout": "Git for Test Automation is about creating reproducible test environments with source control, containers, orchestration, and operational tooling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "DevOps",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Writing Maintainable Assertions",
+    "author": "Nadia Petrova",
+    "whatThisBookIsAbout": "Writing Maintainable Assertions is about applying programming fundamentals such as reusable abstractions, modular design, maintainable code, assertions, data-driven patterns, and resilient error handling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Programming Fundamentals",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "The Art of Test Reviews",
+    "author": "Samuel Green",
+    "whatThisBookIsAbout": "The Art of Test Reviews is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Test Environments and Config",
+    "author": "Yuki Tanaka",
+    "whatThisBookIsAbout": "Test Environments and Config is about creating reproducible test environments with source control, containers, orchestration, and operational tooling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "DevOps",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "From Manual to Automation",
+    "author": "Ravi Shankar",
+    "whatThisBookIsAbout": "From Manual to Automation is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Playwright Component Testing",
+    "author": "Anita Rao",
+    "whatThisBookIsAbout": "Playwright Component Testing is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "End to End Test Design",
+    "author": "David Chen",
+    "whatThisBookIsAbout": "End to End Test Design is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Data Driven Testing Patterns",
+    "author": "Priya Nair",
+    "whatThisBookIsAbout": "Data Driven Testing Patterns is about applying programming fundamentals such as reusable abstractions, modular design, maintainable code, assertions, data-driven patterns, and resilient error handling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Programming Fundamentals",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "HTTP and the Web for Testers",
+    "author": "Marcus Webb",
+    "whatThisBookIsAbout": "HTTP and the Web for Testers is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "JSON Schema Validation",
+    "author": "Sofia Alvarez",
+    "whatThisBookIsAbout": "JSON Schema Validation is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Async Testing in JavaScript",
+    "author": "Rahul Menon",
+    "whatThisBookIsAbout": "Async Testing in JavaScript is about using modern JavaScript patterns to write clear asynchronous tests and diagnose application behavior. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "JavaScript",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Retry and Resilience Patterns",
+    "author": "Elena Popov",
+    "whatThisBookIsAbout": "Retry and Resilience Patterns is about applying programming fundamentals such as reusable abstractions, modular design, maintainable code, assertions, data-driven patterns, and resilient error handling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Programming Fundamentals",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Testing Microservices",
+    "author": "James Okoro",
+    "whatThisBookIsAbout": "Testing Microservices is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "API Documentation for Testers",
+    "author": "Mei Lin",
+    "whatThisBookIsAbout": "API Documentation for Testers is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "The Quality Engineering Mindset",
+    "author": "Carlos Duarte",
+    "whatThisBookIsAbout": "The Quality Engineering Mindset is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Selenium Grid in Depth",
+    "author": "Fatima Hassan",
+    "whatThisBookIsAbout": "Selenium Grid in Depth is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Cypress vs Playwright",
+    "author": "Tomas Novak",
+    "whatThisBookIsAbout": "Cypress vs Playwright is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Automated Smoke and Regression",
+    "author": "Grace Kim",
+    "whatThisBookIsAbout": "Automated Smoke and Regression is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Test Pyramid in Practice",
+    "author": "Owen Bennett",
+    "whatThisBookIsAbout": "Test Pyramid in Practice is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Flaky Test Forensics",
+    "author": "Lena Fischer",
+    "whatThisBookIsAbout": "Flaky Test Forensics is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Advanced Locators and Selectors",
+    "author": "Arjun Bhat",
+    "whatThisBookIsAbout": "Advanced Locators and Selectors is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Session and Cookie Testing",
+    "author": "Nadia Petrova",
+    "whatThisBookIsAbout": "Session and Cookie Testing is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Rate Limiting and Throttling",
+    "author": "Samuel Green",
+    "whatThisBookIsAbout": "Rate Limiting and Throttling is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Idempotency in APIs",
+    "author": "Yuki Tanaka",
+    "whatThisBookIsAbout": "Idempotency in APIs is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Pagination and Filtering Patterns",
+    "author": "Ravi Shankar",
+    "whatThisBookIsAbout": "Pagination and Filtering Patterns is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Playwright Fixtures in Depth",
+    "author": "Anita Rao",
+    "whatThisBookIsAbout": "Playwright Fixtures in Depth is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Test Reporting with Allure",
+    "author": "David Chen",
+    "whatThisBookIsAbout": "Test Reporting with Allure is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "API Mocking with Playwright",
+    "author": "Priya Nair",
+    "whatThisBookIsAbout": "API Mocking with Playwright is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Continuous Integration Cookbook",
+    "author": "Marcus Webb",
+    "whatThisBookIsAbout": "Continuous Integration Cookbook is about running automated quality gates in continuous integration pipelines with repeatable reporting and secure configuration. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "CI/CD",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "The Test Automation Pyramid",
+    "author": "Sofia Alvarez",
+    "whatThisBookIsAbout": "The Test Automation Pyramid is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Selectors and Auto Waiting",
+    "author": "Rahul Menon",
+    "whatThisBookIsAbout": "Selectors and Auto Waiting is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Handling Iframes and Popups",
+    "author": "Elena Popov",
+    "whatThisBookIsAbout": "Handling Iframes and Popups is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "File Upload and Download Testing",
+    "author": "James Okoro",
+    "whatThisBookIsAbout": "File Upload and Download Testing is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Web Sockets Testing Basics",
+    "author": "Mei Lin",
+    "whatThisBookIsAbout": "Web Sockets Testing Basics is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Authentication State Reuse",
+    "author": "Carlos Duarte",
+    "whatThisBookIsAbout": "Authentication State Reuse is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Screenshot and Video Capture",
+    "author": "Fatima Hassan",
+    "whatThisBookIsAbout": "Screenshot and Video Capture is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Trace Viewer Mastery",
+    "author": "Tomas Novak",
+    "whatThisBookIsAbout": "Trace Viewer Mastery is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Sharding Tests Across Machines",
+    "author": "Grace Kim",
+    "whatThisBookIsAbout": "Sharding Tests Across Machines is about running automated quality gates in continuous integration pipelines with repeatable reporting and secure configuration. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "CI/CD",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Environment Variables for Tests",
+    "author": "Owen Bennett",
+    "whatThisBookIsAbout": "Environment Variables for Tests is about creating reproducible test environments with source control, containers, orchestration, and operational tooling. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "DevOps",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Secrets Management in CI",
+    "author": "Lena Fischer",
+    "whatThisBookIsAbout": "Secrets Management in CI is about running automated quality gates in continuous integration pipelines with repeatable reporting and secure configuration. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "CI/CD",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Testing Single Page Applications",
+    "author": "Arjun Bhat",
+    "whatThisBookIsAbout": "Testing Single Page Applications is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Handling Dynamic Content",
+    "author": "Nadia Petrova",
+    "whatThisBookIsAbout": "Handling Dynamic Content is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Keyboard and Mouse Simulation",
+    "author": "Samuel Green",
+    "whatThisBookIsAbout": "Keyboard and Mouse Simulation is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Drag and Drop Automation",
+    "author": "Yuki Tanaka",
+    "whatThisBookIsAbout": "Drag and Drop Automation is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Testing Forms and Validation",
+    "author": "Ravi Shankar",
+    "whatThisBookIsAbout": "Testing Forms and Validation is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Cookies and Local Storage",
+    "author": "Anita Rao",
+    "whatThisBookIsAbout": "Cookies and Local Storage is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Geolocation and Permissions",
+    "author": "David Chen",
+    "whatThisBookIsAbout": "Geolocation and Permissions is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Emulating Mobile Devices",
+    "author": "Priya Nair",
+    "whatThisBookIsAbout": "Emulating Mobile Devices is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Dark Mode and Theming Tests",
+    "author": "Marcus Webb",
+    "whatThisBookIsAbout": "Dark Mode and Theming Tests is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Accessibility Tree Snapshots",
+    "author": "Sofia Alvarez",
+    "whatThisBookIsAbout": "Accessibility Tree Snapshots is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Component Testing with React",
+    "author": "Rahul Menon",
+    "whatThisBookIsAbout": "Component Testing with React is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Testing Vue Applications",
+    "author": "Elena Popov",
+    "whatThisBookIsAbout": "Testing Vue Applications is about testing modern web application behavior, accessibility, browser capabilities, responsive layouts, and user input. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Web Development",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "API First Development",
+    "author": "James Okoro",
+    "whatThisBookIsAbout": "API First Development is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "OpenAPI and Schema Testing",
+    "author": "Mei Lin",
+    "whatThisBookIsAbout": "OpenAPI and Schema Testing is about testing HTTP and API contracts, schemas, authentication, resilience, data boundaries, and service integrations. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "API Testing",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Postman to Playwright",
+    "author": "Carlos Duarte",
+    "whatThisBookIsAbout": "Postman to Playwright is about building reliable Playwright browser tests with locators, fixtures, isolation, debugging, and cross-browser execution. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Playwright",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Test Case Design Techniques",
+    "author": "Fatima Hassan",
+    "whatThisBookIsAbout": "Test Case Design Techniques is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Risk Based Testing",
+    "author": "Tomas Novak",
+    "whatThisBookIsAbout": "Risk Based Testing is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Boundary Value Analysis",
+    "author": "Grace Kim",
+    "whatThisBookIsAbout": "Boundary Value Analysis is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "Equivalence Partitioning Guide",
+    "author": "Owen Bennett",
+    "whatThisBookIsAbout": "Equivalence Partitioning Guide is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "State Transition Testing",
+    "author": "Lena Fischer",
+    "whatThisBookIsAbout": "State Transition Testing is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Decision Table Testing",
+    "author": "Arjun Bhat",
+    "whatThisBookIsAbout": "Decision Table Testing is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "The Automation ROI Playbook",
+    "author": "Nadia Petrova",
+    "whatThisBookIsAbout": "The Automation ROI Playbook is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  },
+  {
+    "bookName": "Building a Test Strategy",
+    "author": "Samuel Green",
+    "whatThisBookIsAbout": "Building a Test Strategy is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "e-Book"
+  },
+  {
+    "bookName": "Quality Gates in Pipelines",
+    "author": "Yuki Tanaka",
+    "whatThisBookIsAbout": "Quality Gates in Pipelines is about running automated quality gates in continuous integration pipelines with repeatable reporting and secure configuration. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "CI/CD",
+    "format": "Hardcover"
+  },
+  {
+    "bookName": "From SDET to Test Lead",
+    "author": "Ravi Shankar",
+    "whatThisBookIsAbout": "From SDET to Test Lead is about designing stable automation suites, maintainable test code, dependable assertions, and pragmatic quality workflows. It uses practical examples for software testers, developers, and quality engineers.",
+    "category": "Test Automation",
+    "format": "Paperback"
+  }
+]
